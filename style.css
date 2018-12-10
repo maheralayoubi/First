@@ -1,0 +1,40 @@
+* {
+box-sizing:border-box;
+text-align: center;
+}
+
+img{
+    width: 55%;
+  }
+
+.left {
+  background-color:#2196F3;
+  padding:20px;
+  float:left;
+  width:33%;
+}
+
+.main {
+  background-color:#f1f1f1;
+  padding:20px;
+  float:left;
+  width:33%;
+}
+
+.right {
+  background-color:#4CAF50;
+  padding:20px;
+  float:left;
+  width:33%;
+}
+  @media only screen and (max-width: 800px) {
+    img{
+      width: 100%;
+    }
+    p{
+      padding: 0 5px;
+    }
+    .left, .main, .right {
+   width:100%;
+  }
+  }
