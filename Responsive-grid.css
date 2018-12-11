@@ -1,0 +1,102 @@
+$_frameWidth: 100% / 6;
+@include page-dash {
+  .dash-wrapper {
+    margin-top: 1rem;
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(6, $_frameWidth) ;
+    grid-template-areas: "dash-areaSearch dash-areaSearch dash-areaSearch dash-areaSearch dash-areaSearch dash-areaSearch"
+                         "dash-areaCounter dash-areaCounter dash-areaCounter dash-areaCounter dash-areaCounter dash-areaCounter"
+                         "dash-responseRate dash-responseRate dash-answerRate dash-answerRate dash-answerRate dash-answerRate"
+                         "dash-alertGenerator dash-alertGenerator dash-alertGenerator dash-supportStatus dash-supportStatus dash-supportStatus"
+                         "dash-monthlySummary dash-monthlySummary dash-monthlySummary dash-monthlySummary dash-monthlySummary dash-monthlySummary";
+                         @include sp($screen-xs-max) {
+                          grid-template-areas: "dash-areaSearch dash-areaSearch dash-areaSearch dash-areaSearch dash-areaSearch dash-areaSearch"
+                          "dash-areaCounter dash-areaCounter dash-areaCounter dash-areaCounter dash-areaCounter dash-areaCounter"
+                          "dash-responseRate dash-responseRate dash-responseRate dash-responseRate dash-responseRate dash-responseRate"
+                          "dash-answerRate dash-answerRate dash-answerRate dash-answerRate dash-answerRate dash-answerRate"
+                          "dash-alertGenerator dash-alertGenerator dash-alertGenerator dash-alertGenerator dash-alertGenerator dash-alertGenerator"
+                          "dash-supportStatus dash-supportStatus dash-supportStatus dash-supportStatus dash-supportStatus dash-supportStatus"
+                          "dash-monthlySummary dash-monthlySummary dash-monthlySummary dash-monthlySummary dash-monthlySummary dash-monthlySummary";
+                         }
+
+  }
+  .dash-areaSearch{
+   -ms-grid-row:1;
+   -ms-grid-column:1;
+   -ms-grid-column-span: 6;
+   grid-area: dash-areaSearch;
+   padding-bottom: 1rem;
+   }
+   .dash-areaCounter {
+    -ms-grid-row:2;
+    -ms-grid-column:1;
+    -ms-grid-column-span: 6;
+    grid-area: dash-areaCounter;
+    padding-bottom: 1rem;
+     }
+  .dash-responseRate {
+    -ms-grid-row:3;
+    -ms-grid-column:1;
+    -ms-grid-column-span:2;
+    grid-area: dash-responseRate;
+    padding-bottom: 1rem;
+    @include sp($screen-xs-max){
+      -ms-grid-column-span: 6;
+    }
+  }
+  .dash-answerRate{
+    -ms-grid-row:3;
+    -ms-grid-column:3;
+    -ms-grid-column-span: 6;
+    grid-area: dash-answerRate;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    @include sp($screen-xs-max){
+      padding-left: 0;
+      -ms-grid-column-span: 6;
+      -ms-grid-row:4;
+      -ms-grid-column:1;
+    }
+  }
+  .dash-alertGenerator{
+    -ms-grid-row:4;
+    -ms-grid-column:1;
+    -ms-grid-column-span:3;
+    grid-area: dash-alertGenerator;
+    padding-bottom: 1rem;
+    @include sp($screen-xs-max){
+      -ms-grid-column-span: 6;
+      -ms-grid-row:5;
+      -ms-grid-column:1;
+    }
+  }
+  .dash-supportStatus{
+    -ms-grid-row:4;
+    -ms-grid-column:4;
+    -ms-grid-column-span:3;
+    grid-area: dash-supportStatus;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    @include sp($screen-xs-max){
+      padding-left: 0;
+      -ms-grid-column-span: 6;
+      -ms-grid-row:6;
+      -ms-grid-column:1;
+    }
+  }
+  .dash-monthlySummary{
+    -ms-grid-row:5;
+    -ms-grid-column:1;
+    -ms-grid-column-span: 6;
+    grid-area: dash-monthlySummary;
+    @include sp($screen-xs-max){
+      -ms-grid-column-span: 6;
+      -ms-grid-row:7;
+      -ms-grid-column:1;
+    }
+  }
+
+}
