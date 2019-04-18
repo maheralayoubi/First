@@ -51,7 +51,6 @@ $_frameWidth: 100% / 6;
                           "dash-supportStatus dash-supportStatus dash-supportStatus dash-supportStatus dash-supportStatus dash-supportStatus"
                           "dash-monthlySummary dash-monthlySummary dash-monthlySummary dash-monthlySummary dash-monthlySummary dash-monthlySummary";
                          }
-
   }
   .dash-areaSearch{
    -ms-grid-row:1;
@@ -128,7 +127,6 @@ $_frameWidth: 100% / 6;
       -ms-grid-column:1;
     }
   }
-
 }
   @media only screen and (max-width: 800px) {
     img{
