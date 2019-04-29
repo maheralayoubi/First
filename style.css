@@ -28,7 +28,7 @@ img{
   width:33%;
 }
 
-$_frameWidth: 100% / 6;
+$_Width: 100% / 6;
 @include page-dash {
   .dash-wrapper {
     margin-top: 1rem;
@@ -36,7 +36,7 @@ $_frameWidth: 100% / 6;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: repeat(6, $_frameWidth) ;
+    grid-template-columns: repeat(6, $_Width) ;
     grid-template-areas: "dash-areaSearch dash-areaSearch dash-areaSearch dash-areaSearch dash-areaSearch dash-areaSearch"
                          "dash-areaCounter dash-areaCounter dash-areaCounter dash-areaCounter dash-areaCounter dash-areaCounter"
                          "dash-responseRate dash-responseRate dash-answerRate dash-answerRate dash-answerRate dash-answerRate"
